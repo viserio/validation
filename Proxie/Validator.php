@@ -1,10 +1,11 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Validation\Proxies;
+namespace Viserio\Component\Validation\Proxie;
 
+use Viserio\Component\Contracts\Validation\Validator as ValidatorContract;
 use Viserio\Component\StaticalProxy\StaticalProxy;
 
-class Sanitizer extends StaticalProxy
+class Validator extends StaticalProxy
 {
     /**
      * {@inheritdoc}
@@ -13,6 +14,6 @@ class Sanitizer extends StaticalProxy
      */
     public static function getInstanceIdentifier()
     {
-        return 'sanitizer';
+        return ValidatorContract::class;
     }
 }

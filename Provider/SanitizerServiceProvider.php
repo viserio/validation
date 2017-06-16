@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace Viserio\Component\Validation\Providers;
+namespace Viserio\Component\Validation\Provider;
 
 use Interop\Container\ServiceProvider;
 use Psr\Container\ContainerInterface;
